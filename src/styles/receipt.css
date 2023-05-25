@@ -1,0 +1,128 @@
+.receipt-wrapper {
+  background-color: #edf1f4;
+  height: 30rem;
+  border-radius: 10px;
+}
+
+.card-details {
+  padding: 0 25px;
+  margin-bottom: 15px;
+  color: #212c55;
+  margin-top: 20px;
+}
+
+.card-details h5 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 15px;
+}
+
+.card-details .card-number {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #212c55;
+}
+
+.card-details svg {
+  font-size: 18px;
+}
+
+.card-details span {
+  margin-left: 10px;
+}
+
+.card-details img {
+  width: 30px;
+}
+
+.card-details div:last-child {
+  display: flex;
+  justify-content: space-between;
+  color: #212c55;
+  align-items: center;
+}
+
+.order-details {
+  padding: 25px 30px;
+  font-size: 13px;
+}
+
+.order-details div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.order-details div label {
+  font-weight: 800;
+  color: #212c55;
+}
+
+.order-details div span {
+  font-weight: 800;
+  color: #9595a0;
+}
+
+.order-summary {
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9595a0;
+}
+
+.order-summary > div div {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 5px;
+}
+
+.order-summary > div > div > #sub {
+  color: #212c55;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.order-summary svg {
+  transform: rotateX(180deg);
+  font-size: 25px;
+}
+.order-summary label,
+.order-summary span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.order-summary h5 {
+  font-size: 20px;
+  margin: 0;
+  color: #212c55;
+}
+
+.seperator {
+  border-bottom: 2px dashed #9595a0;
+  position: relative;
+  margin: 10px 0;
+}
+
+.seperator::before,
+.seperator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.seperator::before {
+  left: -10px;
+}
+
+.seperator::after {
+  right: -10px;
+}

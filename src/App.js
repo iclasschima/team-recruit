@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { IoClose } from "react-icons/io5";
+import TopSection from "./components/TopSection";
+import Form from "./components/Form";
+import Card from "./components/Card";
+import Receipt from "./components/Receipt";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="close-icon-wrapper">
+          <IoClose size={25} />
+        </div>
+
+        <div className="grid-container">
+          <div className="left-section">
+            <TopSection />
+            <Form />
+          </div>
+          <div className="right-section">
+            <div className="receipt-wrapper">
+              <Card />
+              <Receipt />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
